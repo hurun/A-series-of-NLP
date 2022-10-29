@@ -4,5 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.7 (torch)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="GlobalPointer_pytorch-main" />
+    <orderEntry type="module" module-name="classify_torch_version" />
+    <orderEntry type="module" module-name="DeepKg" />
   </component>
 </module>

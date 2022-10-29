@@ -2,18 +2,18 @@ import torch
 
 class Config():
     def __init__(self):
-        self.director_path = "../data/"
-        self.train_path = self.director_path + "train_xeon3nlp.txt"
-        self.dev_path = self.director_path + "valid_xeon3nlp.txt"
-        self.test_path = self.director_path + "test_xeon3nlp.txt"
-        self.all_schema = self.director_path + "all_schemas"
+        self.director_path = "./data"
+        self.train_path = self.director_path + "/cluener/train.json"
+        self.dev_path = self.director_path + "/cluener/dev.json"
+        self.test_path = self.director_path + "/cluener/test.json"
+        self.entity_to_id = self.director_path + "/cluener/ent2id.json"
 
-        self.maxlen = 64
+        self.max_len = 64
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-
+        self.batch_size = 32
         # bert
         self.model_name = "bert"
-        self.bert_dir = "/home/hurun/BertModel/torch/albert-base-v2/"
+        self.bert_dir = "/home/hurun/BertModel/torch/bert-base-chinese/"
         self.config_path = self.bert_dir + 'config.json'
         self.bert_model = self.bert_dir + 'pytorch_model.bin'
         self.dict_path = self.bert_dir + 'vocab_chinese.txt'

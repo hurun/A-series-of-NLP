@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/A-series-of-NLP-main.iml" filepath="$PROJECT_DIR$/.idea/A-series-of-NLP-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DeepKg/.idea/DeepKg.iml" filepath="$PROJECT_DIR$/../DeepKg/.idea/DeepKg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../GlobalPointer_pytorch-main/.idea/GlobalPointer_pytorch-main.iml" filepath="$PROJECT_DIR$/../GlobalPointer_pytorch-main/.idea/GlobalPointer_pytorch-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../classify_torch_version_copy/.idea/classify_torch_version.iml" filepath="$PROJECT_DIR$/../classify_torch_version_copy/.idea/classify_torch_version.iml" />
     </modules>
   </component>
 </project>

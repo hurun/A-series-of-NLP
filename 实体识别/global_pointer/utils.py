@@ -13,11 +13,12 @@ import json
 from config import Config
 import torch.nn as nn
 from tqdm import tqdm
+from transformers import BertModel, BertTokenizer, BertTokenizerFast
 
 config = Config()
 
+tokenizer = BertTokenizerFast.from_pretrained(config.bert_dir, add_special_tokens=True, do_lower_case=False)
 dict_path = config.dict_path
-
 
 # 加载数据集
 class MyDataset(ListDataset):
@@ -49,7 +50,7 @@ def get_categories_label2id(file_path):
 
 # 建立分词器
 tokenizer = Tokenizer(dict_path, do_lower_case=True)
-categories_label2id = get_categories_label2id("../data/Xeon3NLP_round1_train_ner_20210524.txt")
+categories_label2id = get_categories_label2id(config.train_path)
 maxlen = config.maxlen
 device = config.device
 

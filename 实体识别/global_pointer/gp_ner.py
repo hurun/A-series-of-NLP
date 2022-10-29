@@ -15,7 +15,7 @@ batch_size = 4
 
 # BERT base
 config_path = config.config_path
-checkpoint_path = config.checkpoint_path
+checkpoint_path = config.bert_model
 dict_path = config.dict_path
 device = config.device
 

@@ -27,7 +27,7 @@ batch_size = 4
 
 # BERT base
 config_path = config.config_path
-checkpoint_path = config.checkpoint_path
+checkpoint_path = config.bert_model
 dict_path = config.dict_path
 # config_path = 'F:/Projects/pretrain_ckpt/bert/[google_tf_base]--chinese_L-12_H-768_A-12/bert_config.json'
 # checkpoint_path = 'F:/Projects/pretrain_ckpt/bert/[google_tf_base]--chinese_L-12_H-768_A-12/pytorch_model.bin'
